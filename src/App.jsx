@@ -1,0 +1,31 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import Button from './components/Button/Button'
+import Grid from './components/Grid/Grid'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import PageMain from './pages/PageMain/PageMain'
+import PageGame from './pages/PageGame/PageGame'
+import Page404 from './pages/Page404/Page404'
+import PageImages from './pages/PageImages/PageImages'
+import List from './components/List'
+import Item from './components/Item'
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<PageMain />} />
+        <Route path='/game' element={<PageGame />} />
+        <Route path='/images' element={<PageImages />}>
+          <Route path='list' element={<List />} />
+          <Route path='item/:id' element={<Item />} />
+        </Route>
+        <Route path='*' element={<Page404 />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App
