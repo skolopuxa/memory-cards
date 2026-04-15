@@ -3,16 +3,21 @@ import Button from "../../components/Button/Button";
 import Grid from "../../components/Grid/Grid";
 import Header from "../../components/Header/Header";
 import useGame from "../../components/UseGame";
-import images from "../../data.json";
+import data from "../../data.json";
 import Modal from "../../components/Modal/Modal";
+import { useEffect, useState } from "react";
 
-export default function PageGame() {
+export default function PageGame()
+{
+const [images, setImages] = useState([]);
+useEffect(()=>{
+    setImages(data.sort(() => Math.random() - 0.5));},[]);
     const {
         finishedItems,
         stepsCount,
         isWin,
         handleReset,
-        checkItems } = useGame();
+        checkItems } = useGame(images);
     const handleBtnReset = () => {
         handleReset();
         images.sort(() => Math.random() - 0.5)
