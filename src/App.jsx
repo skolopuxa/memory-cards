@@ -14,7 +14,7 @@ import Item from './components/Item'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/memory-cards">
       <Routes>
         <Route path='/' element={<PageMain />} />
         <Route path='/game' element={<PageGame />} />
