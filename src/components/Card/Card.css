@@ -2,10 +2,10 @@
     position: relative;
     width: 250px;
     height: 250px;
-    border: 5px solid coral;
+    border: 5px solid rgb(255, 0, 170);
     transform-style: preserve-3d;
     border-radius: 5px;
-    box-shadow: lemonchiffon 0 0 6px 6px;
+    box-shadow: rgb(145, 255, 0) 0 0 6px 6px;
     transition: 0.5s transform ease-in-out;
 }
 
@@ -22,7 +22,7 @@
     display: block;
     width: 240px;
     height: 240px;
-    background-image: url(../img/фон.jpg);
+    background-image: url(../img/фонкарточки.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -41,4 +41,15 @@
 }
 .card-finish {
     transform: rotateY(180deg);
+}
+@media(max-width: 390px) {
+  .card {
+    width: 100%;
+  }
+}
+@media(max-width: 390px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }

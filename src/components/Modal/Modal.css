@@ -8,17 +8,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(140, 174, 200, 0.8);
+  background-image: url(/public/img/фонмодальный.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   overflow-y: hidden;
   overscroll-behavior: contain;
   pointer-events: auto;
   animation: fadeIn 0.9s 1.6s both;
+
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -30,11 +35,12 @@
   min-height: 285px;
   max-height: 100%;
   padding: 72px 40px 36px;
-  background-color:ghostwhite;
+  background-image: url(/public/img/модальноеокно.jpg);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   box-sizing: border-box;
   text-align: center;
+
 }
 
 .modal-caption {
@@ -49,15 +55,17 @@
   margin-bottom: 32px;
   font-size: 16px;
   line-height: 22px;
+
 }
 
 .modal .button {
   width: 100%;
-  color: rgb(248, 33, 98);
-  background-color: rgb(250, 214, 232);
+  color: black;
+  background-color: rgb(145, 255, 0);
   margin: 0;
   margin-bottom: 32px;
   font-size: 16px;
   line-height: 22px;
+  font-family: "WDXL Lubrifont TC", sans-serif;
 
 }

@@ -1,5 +1,4 @@
 
-
 .container{
   height: 100%;
   min-height: 100%;
@@ -10,5 +9,5 @@
 }
 header,
 footer {
-  background: pink;
+  background: rgb(255, 0, 170);
 }

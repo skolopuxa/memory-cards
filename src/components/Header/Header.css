@@ -1,18 +1,23 @@
 header {
-    background-color: cadetblue;
+    background-color: rgb(255, 0, 170);
     padding: 15px;
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
+
 .main-menu ul {
-list-style: none;
-display: flex;
-flex-direction: row;
-gap: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: bold;
 }
 
 .link--active {
-    color: chocolate;
+    color: rgb(145, 255, 0);
     font-weight: bold;
+}
+a {
+    color: black
 }
